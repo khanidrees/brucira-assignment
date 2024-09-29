@@ -14,9 +14,9 @@ const Carousel = () => {
     <div className='mt-9'>
         <div className='flex'>
         <div  className='flex gap-8'>
-                    <div className='w-[488px] h-[517px] '>
-                        <img className='object-cover' src={testimonies[currIdx]?.image} alt='headshot'/>
-                    </div>
+                    {/* <div className=''> */}
+                        <img className='object-cover w-[488px] h-[517px] ' src={testimonies[currIdx]?.image} alt='headshot'/>
+                    {/* </div> */}
                     <div className='flex flex-col justify-between w-full'>
                         <p className='text-start font-semibold text-[24px]'>{testimonies[currIdx]?.testimony}</p>
                         <div className='flex justify-between text-start'>

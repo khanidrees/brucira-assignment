@@ -23,11 +23,13 @@ const Accordion = () => {
     
   return (
     <div className='flex gap-10'>
-        <div className='w-[484px] h-[451px]'>
+        {/* <div className='w-[484px] h-[451px]'> */}
             <img
-            className='object-cover aspect-[4/3]'
+            className='object-cover w-[484px] h-[451px]'
+            // width={'484px'}
+            // height={'451px'}
             src={AccordionData[currentItem]?.image} />
-        </div>
+        {/* </div> */}
         <div className='h-[451px] flex flex-col items-start'>
             {AccordionData?.map((item,idx)=>{
                 return (
