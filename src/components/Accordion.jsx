@@ -4,17 +4,17 @@ const AccordionData = [
     {
         title:'Innovative',
         description:'Ea Lorem magna sint pariatur ullamco adipisicing ex consectetur cillum irure qui officia nostrud.',
-        image:'bf16923bd8c63f18453d77a25d8dd936.png'
+        image:'bf16923bd8c63f18453d77a25d8dd936.webp'
     },
     {
         title:'Reliable',
         description:'Creation, ensuring your messages resonate worldwide.From concept to distribution, our platform serves as your strategic partner.',
-        image:'stock-photo-business-people-clapping-hands-during-a-conference-business-professionals-applauding-at-a-seminar-1935764035 1.png'
+        image:'stock-photo-business-people-clapping-hands-during-a-conference-business-professionals-applauding-at-a-seminar-1935764035 1.webp'
     },
     {
         title:'Quality',
         description:'Irure culpa excepteur amet veniam qui aute et sunt proident occaecat sunt sit fugiat ex.',
-        image:'AdobeStock_609605535.png'
+        image:'AdobeStock_609605535.webp'
     }
 ]
 
