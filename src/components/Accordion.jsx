@@ -22,25 +22,25 @@ const Accordion = () => {
     const [currentItem, setCurrentItem] = useState(1);
     
   return (
-    <div className='flex gap-10'>
+    <div className='flex gap-10 flex-col md:flex-row'>
         {/* <div className='w-[484px] h-[451px]'> */}
             <img
-            className='object-cover w-[484px] h-[451px]'
+            className='object-cover w-4/5 h-[200px] md:w-[484px] md:h-[451px]'
             // width={'484px'}
             // height={'451px'}
             src={AccordionData[currentItem]?.image} />
         {/* </div> */}
-        <div className='h-[451px] flex flex-col items-start'>
+        <div className='h-[200px] md:h-[451px] flex flex-col items-start'>
             {AccordionData?.map((item,idx)=>{
                 return (
                 <div 
                 className={'flex flex-col items-start cursor-pointer flex-1 '+(currentItem==idx&&'flex-3')} key={idx}
                 onClick={()=>setCurrentItem(idx)}
                 >
-                    {currentItem==idx && <p className='text-primary font-medium text-[20px]'>{"0"+(idx+1)}</p>}
-                    <p className={'font-medium  '+(currentItem==idx ? 'text-black text-[32px]':'text-[24px] text-slate-400')}>{item?.title}</p>
+                    {currentItem==idx && <p className='text-primary font-medium text-[14px] md:text-[20px]'>{"0"+(idx+1)}</p>}
+                    <p className={'font-medium  '+(currentItem==idx ? 'text-black text-[18px] md:text-[32px]':'text-[16px] md:text-[24px] text-slate-400')}>{item?.title}</p>
                     {currentItem==idx &&
-                    <p className='text-start'>{item?.description}</p>
+                    <p className='text-start text-[16px]'>{item?.description}</p>
                     }
                 </div>);
             })

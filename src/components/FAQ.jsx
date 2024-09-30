@@ -31,12 +31,12 @@ const FAQData = [
 const FAQ = () => {
     const [currentItem, setCurrentItem] = useState();
   return (
-    <div className='mt-32 flex justify-between flex-wrap'>
-        <p className='font-medium text-[52px] w-2/5 text-start'>
+    <div className='mt-8 md:mt-32 flex flex-col md:flex-row justify-between '>
+        <p className='font-medium text-[28px] md:text-[52px] w-2/5 text-start'>
         Frequently asked
         questions
         </p>
-        <div className='w-3/5'>
+        <div className='w-full md:w-3/5'>
             {FAQData?.map((item,idx)=>{
                 return (
                 <div 
@@ -44,12 +44,12 @@ const FAQ = () => {
                 onClick={()=>setCurrentItem(idx)}
                 >
                     <div className='flex justify-between w-full py-6'>
-                        <p className={'font-normal  text-black text-[18px]'}>{item?.question}</p>
+                        <p className={'font-normal  text-black text-[14px] md:text-[18px]'}>{item?.question}</p>
                         <img src={currentItem==idx?'up.svg':'down.svg'}/>
                     </div>
                     
                     {currentItem==idx &&
-                    <p className='text-start'>{item?.answer}</p>
+                    <p className='text-[14px] md:text-[16px] text-start font-semibold'>{item?.answer}</p>
                     }
                 </div>);
             })

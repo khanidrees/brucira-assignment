@@ -18,20 +18,20 @@ function App() {
   
 
   return (
-    <div className='px-[90px]'>
+    <div className='md:px-[90px] overflow-hidden'>
       <Navbar/>
       <Hero/>
       <LogoMarquee/>
       
-      <div className='text-start'>
-        <p className='font-medium text-[52px]'>Our expertise and passion</p>
-        <p className='font-medium text-[52px]'>breathe life into your narratives</p>
+      <div className='text-start py-[64px]'>
+        <p className='font-medium text-xl md:text-5xl'>Our expertise and passion</p>
+        <p className='font-medium text-xl md:text-5xl'>breathe life into your narratives</p>
           
       </div>
 
       <Accordion />
       <Heading>  WE ARE GLOBAL</Heading>
-      <div className='flex flex-wrap gap-[126px]'>
+      <div className='grid grid-cols-2 md:grid-cols-4 '>
         <AnalyticsComponent number={'60'}><p>brands</p><p>partnered with</p> </AnalyticsComponent>
         <AnalyticsComponent number={'3K'}><p>brand content</p><p>assets created</p> </AnalyticsComponent>
         <AnalyticsComponent number={'1K'}><p>global partners and</p><p>collaborations</p> </AnalyticsComponent>

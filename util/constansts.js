@@ -17,7 +17,7 @@ export const companyList = [
     {
         name:'Lissa Smith',
         company:'VYMO',
-        title:'Director of Marketing and Communications',
+        title:'Director of Marketing',
         testimony:"Lorem Ipsum is simply dummy text of the printing and  typesetting industry. Lorem Ipsum has been the industry's standard dummy  text ever since the 1500s, when an unknown printer took a galley of  type and scrambled",
         image:'test-1.webp'
     },

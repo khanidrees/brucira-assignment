@@ -6,21 +6,21 @@ import PrimaryBtn from './PrimaryBtn'
 
 const Contact = () => {
   return (
-    <div className='mt-30 flex justify-around'>
-        <div className='w-2/5'>
-            <div className='text-[64px] font-medium text-start'>
+    <div className='mt-30 flex flex-col md:flex-row justify-around'>
+        <div className='w-full md:w-2/5 '>
+            <div className='text-[32px] md:text-[64px] font-medium text-start'>
                 <p>LETS START</p> 
                 <p>SOMETHING</p>
                 <p className='text-primary'>NEW</p>
                 <p>TOGETHER</p>
             </div>
-            <div className='flex justify-around text-start mt-16'>
+            <div className='flex gap-4 md:gap-0 justify-around text-start mt-16'>
                 <ContactCard user={contactList[0]} />
                 <ContactCard user={contactList[1]} />
             </div>
         </div>
-        <div className='w-2/5 flex flex-col justify-center items-center'>
-            <p className='font-semibold text-[24px]'>Give us few details and we’ll get in touch</p>
+        <div className='w-full md:w-2/5 flex flex-col justify-center items-center'>
+            <p className='font-semibold text-[16px] md:text-[24px] mt-8 md:mt-0'>Give us few details and we’ll get in touch</p>
             <form className='w-11/12 pt-7'>
                 <div>
                     <input className='w-full border-b-2 border-slate-400 mb-8' type='text' placeholder='Name*' name='name' required={true}/>
