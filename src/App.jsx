@@ -18,7 +18,7 @@ function App() {
   
 
   return (
-    <div >
+    <div className='px-[90px]'>
       <Navbar/>
       <Hero/>
       <LogoMarquee/>

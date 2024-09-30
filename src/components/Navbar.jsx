@@ -6,7 +6,7 @@ import NavBtnFill from './NavBtnFill';
 const Navbar = () => {
     const [active, setActive] = useState('ABOUT')
   return (
-    <div className=' flex justify-between items-center h-[86px] fixed top-0 left-0 w-full'>
+    <div className=' flex justify-between items-center h-[86px] fixed top-0 left-0 w-[100vw] px-[90px]'>
         <div>
             <img src='./logo.svg' alt='logo'/>
         </div>
