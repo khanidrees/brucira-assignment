@@ -18,7 +18,7 @@ function App() {
   
 
   return (
-    <div className='md:px-[90px] overflow-hidden'>
+    <div className='px-4 md:px-[90px] overflow-hidden'>
       <Navbar/>
       <Hero/>
       <LogoMarquee/>
